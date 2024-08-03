@@ -1,3 +1,4 @@
+// src/components/pages/AchievementsPage.js
 import React from 'react';
 import Achievements from '../Achievements';
 
