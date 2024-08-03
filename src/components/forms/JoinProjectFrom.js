@@ -1,8 +1,8 @@
+// src/components/JoinProjectForm.js
 import React, { useState } from 'react';
-import { db } from '../../firebase';
-import { collection, addDoc } from 'firebase/firestore';
+import './JoinProjectForm.css';
 
-const JoinForm = () => {
+const JoinProjectForm = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -10,43 +10,42 @@ const JoinForm = () => {
   });
 
   const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value
-    });
+    setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    try {
-      await addDoc(collection(db, 'participants'), formData);
-      alert('Form submitted successfully!');
-    } catch (error) {
-      console.error('Error adding document: ', error);
-    }
+    // Handle form submission (e.g., send email)
   };
 
   return (
-    <div className="join-form">
+    <div className="join-project-form">
       <h2>Join Project</h2>
       <form onSubmit={handleSubmit}>
-        <label>
-          Name:
-          <input type="text" name="name" value={formData.name} onChange={handleChange} />
-        </label>
-        <label>
-          Email:
-          <input type="email" name="email" value={formData.email} onChange={handleChange} />
-        </label>
-        <label>
-          Message:
-          <textarea name="message" value={formData.message} onChange={handleChange}></textarea>
-        </label>
+        <input
+          type="text"
+          name="name"
+          value={formData.name}
+          onChange={handleChange}
+          placeholder="Your Name"
+        />
+        <input
+          type="email"
+          name="email"
+          value={formData.email}
+          onChange={handleChange}
+          placeholder="Your Email"
+        />
+        <textarea
+          name="message"
+          value={formData.message}
+          onChange={handleChange}
+          placeholder="Your Message"
+        />
         <button type="submit">Submit</button>
       </form>
     </div>
   );
 };
 
-export default JoinForm;
+export default JoinProjectForm;

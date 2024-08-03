@@ -1,0 +1,105 @@
+/* styles.css */
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #dcdcdc;
+    padding: 10px 20px;
+  }
+  
+  .header h1 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #333;
+  }
+  
+  .navbar {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    background-color: #ff5e5e;
+    color: white;
+  }
+  
+  .navbar a.active {
+    background-color: #d34848;
+  }
+  
+  .home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #a9a1a1;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
+  }
+  
+  h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: black;
+  }
+  
+  .quote, .introduction, .profile-photo {
+    margin: 20px 0;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .quote p, .introduction p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    background-color: #d1d1d1;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  
+  .quote p {
+    font-style: italic;
+    color: #7f8c8d;
+  }
+  
+  .profile-photo img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .profile-photo {
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .home-container {
+      padding: 10px;
+    }
+  
+    h1 {
+      font-size: 2em;
+    }
+  
+    .quote p, .introduction p {
+      font-size: 1em;
+    }
+  }
+  
