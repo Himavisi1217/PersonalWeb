@@ -1,0 +1,90 @@
+/* src/components/Achievements.css */
+.achievements {
+    padding: 2rem;
+  }
+  
+  .add-achievement {
+    margin-bottom: 2rem;
+  }
+  
+  .add-achievement h3 {
+    margin-bottom: 1rem;
+  }
+  
+  .add-achievement form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .add-achievement input,
+  .add-achievement textarea {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  .add-achievement button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .add-achievement button:hover {
+    background-color: #0056b3;
+  }
+  
+  .past-work {
+    margin-bottom: 2rem;
+  }
+  
+  .achievement {
+    margin-bottom: 1rem;
+  }
+  
+  .achievement-photo {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 0.5rem;
+    border-radius: 5px;
+  }
+  
+  .comments-section {
+    margin-top: 2rem;
+  }
+  
+  .comments-section h3 {
+    margin-bottom: 1rem;
+  }
+  
+  .comments-section form {
+    margin-bottom: 1rem;
+  }
+  
+  .comments-section textarea {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  .comments-section button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
+  
+  .comments-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .comments-section ul li {
+    background: #f9f9f9;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+  }
+  

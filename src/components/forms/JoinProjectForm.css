@@ -1,0 +1,34 @@
+/* src/components/JoinProjectForm.css */
+.join-project-form {
+    padding: 2rem;
+  }
+  
+  .join-project-form h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .join-project-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .join-project-form input,
+  .join-project-form textarea {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  .join-project-form button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .join-project-form button:hover {
+    background-color: #0056b3;
+  }
+  
